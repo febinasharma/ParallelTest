@@ -104,6 +104,13 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
+          <configuration>
+			  <forkCount>3</forkCount>
+			  <reuseForks>true</reuseForks>
+			  <suiteXmlFiles>
+				  <suiteXmlFile>C:\Users\febin\eclipse-workspace\ParallelTest\src\main\resource\testng.xml</suiteXmlFile>
+			  </suiteXmlFiles>
+		  </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
